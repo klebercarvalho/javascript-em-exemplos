@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Operador Condicional (Ternário)</h2>
+
+<p>Insira sua idade e clique no botão:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Verificar</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var age, voteable;
+    age = document.getElementById("age").value;
+    voteable = (age < 18) ? "Menor" : "Maior";
+    document.getElementById("demo").innerHTML = voteable + "para votar.";
+}
+</script>
+
+</body>
+</html>

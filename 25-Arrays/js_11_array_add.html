@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>A propriedade length fornece uma maneira fácil de acrescentar novos elementos a um array sem usar o método push ().</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits[fruits.length] = "Lemon";
+    document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Never create strings as objects.</p>
+    <p>Strings and objects cannot be safely compared.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        /*
+         * Always treat numbers, strings, or booleans as primitive values. Not as objects.
+         * Declaring these types as objects, slows down execution speed, 
+         * and produces nasty side effects
+         */
+        var x = "John";              // x is a string
+        var y = new String("John");  // y is an object
+        document.getElementById("demo").innerHTML = x === y;
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+/* 
+JavaScript does not create a new scope for each code block.
+It is true in many programming languages, but not true in JavaScript.
+It is a common mistake, among new JavaScript developers, to believe that this code returns undefined
+*/
+for (var i = 0; i < 10; i++) {
+    // some code
+}
+document.getElementById("demo").innerHTML = i;
+</script>
+
+</body>
+</html>

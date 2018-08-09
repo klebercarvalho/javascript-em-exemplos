@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <!--
+        The switch statement does not work. Try to fix it.
+        Hint: Do not forget the colon after each case, and end each case with a break; statement.
+    -->
+<body>
+
+<input id="myInput" type="text" value="Orange">
+<button onclick="checkFruit()">Check Fruit</button>
+<p id="demo"></p>
+
+<script>
+function checkFruit() {
+  var text;
+  var fruits = document.getElementById("myInput").value;
+
+  switch(fruits) {
+    case "Banana"
+      text = "Banana is good!";
+    case "Orange"
+      text = "I am not a fan of orange.";
+    case "Apple"
+      text = "How you like them apples?";
+    default
+      text = "I have never heard of that fruit.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

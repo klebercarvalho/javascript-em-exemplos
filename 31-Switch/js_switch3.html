@@ -1,0 +1,31 @@
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var text;
+var x;
+// x = new Date().getDay();
+x = 3;
+switch (x) {
+    case 4:
+    case 5:
+        text = "Logo é fim de semana";
+        break;
+    case 0:
+    case 6:
+        text = "É quarta";
+        break;
+    case 3:
+    case 5:
+        text = "É quinta";
+        break;
+    default:
+        text = "Ansioso para o fim de semana";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Breaking a Return Statement
+// It is a default JavaScript behavior to close a statement automatically at the end of a line.
+// Because of this, these two examples will return the same result
+// js_mistakes_return_1 e js_mistakes_return_2
+document.getElementById("demo").innerHTML = myFunction(55);
+function myFunction(a) {
+    var power = 10;
+    return a * power;
+}
+</script>
+
+</body>
+</html>

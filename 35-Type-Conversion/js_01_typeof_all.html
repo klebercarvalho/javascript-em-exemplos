@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>O Operador typeof do JavaScript  </h2>
+
+    <p>O tipo de operador retorna o tipo de variável, objeto, função ou expressão.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            typeof "john" + "<br>" +
+            typeof 3.14 + "<br>" +
+            typeof NaN + "<br>" +
+            typeof false + "<br>" +
+            typeof [1, 2, 3, 4] + "<br>" +
+            typeof { name: 'john', age: 34 } + "<br>" +
+            typeof new Date() + "<br>" +
+            typeof function () { } + "<br>" +
+            typeof myCar + "<br>" +
+            typeof null;
+    </script>
+
+</body>
+
+</html>

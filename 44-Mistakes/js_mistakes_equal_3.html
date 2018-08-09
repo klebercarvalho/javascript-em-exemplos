@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var x = 0;
+// This if statement returns false (maybe not as expected), 
+// because 0 is false:
+document.getElementById("demo").innerHTML = Boolean(x = 0);
+</script>
+
+</body>
+</html>

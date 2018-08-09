@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to encode/decode a email.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="source"></p>
+<p id="result"></p>
+
+<script>
+function myFunction() {
+    // Email example to decode
+    //var email = "GI.EMEA.T%26T.PMO@cz.ibm.com";
+    // Email example to encode
+    var email = "GI.EMEA.T&T.PMO@cz.ibm.com"
+    var result = encodeEmail(email);
+    //var result = decodeEmail(email);
+    document.getElementById("source").innerHTML = "Transforming email from " + email;
+    document.getElementById("result").innerHTML = "To " + result;
+}
+
+function encodeEmail(str) {
+    return encodeURIComponent(str);
+    // return encodeURI(str);
+}
+
+function decodeEmail(str) {
+    return decodeURIComponent(str);
+    // decodeURI(str);
+}
+
+</script>
+
+</body>
+</html>

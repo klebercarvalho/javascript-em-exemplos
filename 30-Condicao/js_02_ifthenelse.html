@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clique no botão para exibir uma saudação baseada em tempo:</p>
+
+<button onclick="myFunction()">Verificar</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (hour < 18) {
+        greeting = "Tenha um bom dia";
+    } else {
+        greeting = "Boa noite";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+    <!--
+        Adicione uma outra declaração para exibir "Você não é John!"..
+        if (condition) {
+            bloco de código a ser executado se a condição for verdadeira
+        } else { 
+            bloco de código a ser executado se a condição for falsa
+        }
+    -->
+<body>
+
+    <p id="demo">Exibir o resultado aqui.</p>
+
+    <script>
+        var firstName = "Kleber";
+
+        if (firstName === "John") {
+            document.getElementById("demo").innerHTML = "Olá " + firstName;
+        } else if(firstName === "Greg") {
+            document.getElementById("demo").innerHTML = "Olá " + firstName;
+        } else {
+            document.getElementById("demo").innerHTML = 
+            "Olá você não é John e nem Greg, então você é o" + firstName;
+        }
+    </script>
+
+</body>
+
+</html>

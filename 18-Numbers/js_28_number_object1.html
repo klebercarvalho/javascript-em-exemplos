@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Nunca crie números como objetos.</p>
+    <p>Números e objetos não podem ser comparados com segurança.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var x = 500;              // x is a number
+        var y = new Number(500);  // y is an object
+        document.getElementById("demo").innerHTML = (x == y);
+    </script>
+
+</body>
+
+</html>

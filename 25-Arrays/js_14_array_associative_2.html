@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Se você usar um índice nomeado, ao acessar uma matriz, o JavaScript redefinirá a matriz para um objeto padrão e alguns métodos e propriedades da matriz produzirão resultados indefinidos ou incorretos.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length;
+</script>
+
+</body>
+</html>
+

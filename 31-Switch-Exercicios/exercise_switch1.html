@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<!--
+    A declaração do switch está faltando um caso para "Apple". 
+    Adicione-o e defina o texto como "Como você gosta de maçãs?"
+    Dica: Não se esqueça do : após o caso e termine com uma declaração break;
+  -->
+
+<body>
+
+  <input id="myInput" type="text" value="Apple">
+  <button onclick="checkFruit()">Verifica Fruta</button>
+  <p id="demo"></p>
+
+  <script>
+    function checkFruit() {
+      var text;
+      var fruits = document.getElementById("myInput").value;
+
+      switch (fruits) {
+        case "Banana":
+          text = "Banana é bom!";
+          break;
+        case "Orange":
+          text = "Eu não sou fan de laranja.";
+          break;
+
+        // add case here
+
+        default:
+          text = "Eu nunca ouvi falar dessa fruta.";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+
+</body>
+
+</html>
